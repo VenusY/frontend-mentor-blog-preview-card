@@ -1,3 +1,5 @@
+@use './util' as u;
+
 @font-face {
   font-family: 'Figtree';
   src: url('../../assets/fonts/Figtree-VariableFont_wght.ttf')
@@ -14,5 +16,56 @@
 }
 
 body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 156px 24px;
+  background: var(--yellow);
   font-family: var(--ff-figtree);
+  font-weight: 500;
+  color: var(--dark-grey);
+}
+
+.card {
+  width: 100%;
+  max-width: 327px;
+  padding: 23px;
+  background: var(--white);
+  border: 1px solid var(--dark-grey);
+  border-radius: 20px;
+
+  &__image {
+    height: 200px;
+    margin-bottom: u.rem(24);
+    object-fit: cover;
+    border-radius: 10px;
+  }
+
+  &__tag {
+    width: fit-content;
+    padding: 7px 12px;
+    margin-bottom: u.rem(12);
+    background: var(--yellow);
+    border-radius: 4px;
+    font-size: u.rem(12);
+    font-weight: 900;
+    line-height: 1;
+  }
+
+  &__date {
+    margin-bottom: u.rem(11);
+    font-size: u.rem(13);
+  }
+
+  &__title {
+    margin-bottom: u.rem(12);
+    font-size: u.rem(20);
+    font-weight: 900;
+  }
+
+  &__description {
+    font-size: u.rem(14);
+    color: var(--light-grey);
+  }
 }
