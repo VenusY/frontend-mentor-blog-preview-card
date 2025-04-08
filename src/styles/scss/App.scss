@@ -34,6 +34,7 @@ body {
   background: var(--white);
   border: 1px solid var(--dark-grey);
   border-radius: 20px;
+  box-shadow: 8px 8px 0 var(--dark-grey);
 
   &__image {
     height: 200px;
@@ -65,7 +66,26 @@ body {
   }
 
   &__description {
+    margin-bottom: u.rem(24);
     font-size: u.rem(14);
     color: var(--light-grey);
+  }
+}
+
+.author {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  &__avatar {
+    width: 32px;
+    height: 32px;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  &__name {
+    font-size: u.rem(15);
+    font-weight: 900;
   }
 }
