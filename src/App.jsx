@@ -1,4 +1,5 @@
 import './styles/reset.css';
+import './styles/scss/App.scss';
 import Article from './components/Article';
 import Author from './components/Author';
 
