@@ -62,8 +62,20 @@ body {
 
   &__title {
     margin-bottom: u.rem(12);
+  }
+
+  &__link {
+    width: fit-content;
     font-size: u.rem(20);
     font-weight: 900;
+    text-decoration: none;
+    color: var(--dark-grey);
+    transition: color 100ms linear;
+
+    &:hover,
+    &:focus-visible {
+      color: var(--yellow);
+    }
   }
 
   &__description {
