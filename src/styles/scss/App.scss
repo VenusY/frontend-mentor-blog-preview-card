@@ -102,3 +102,35 @@ body {
     font-weight: 900;
   }
 }
+
+@media screen and (min-width: 450px) {
+  .card {
+    max-width: 384px;
+
+    &__image {
+      aspect-ratio: unset;
+    }
+
+    &__tag {
+      padding: 7.5px 12px;
+      font-size: u.rem(14);
+    }
+
+    &__date {
+      margin-bottom: u.rem(12);
+      font-size: u.rem(14);
+    }
+
+    &__title {
+      margin-bottom: u.rem(14);
+    }
+
+    &__link {
+      font-size: u.rem(24);
+    }
+
+    &__description {
+      font-size: u.rem(16);
+    }
+  }
+}
