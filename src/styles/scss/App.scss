@@ -37,7 +37,8 @@ body {
   box-shadow: 8px 8px 0 var(--dark-grey);
 
   &__image {
-    height: 200px;
+    aspect-ratio: 279 / 200;
+    width: 100%;
     margin-bottom: u.rem(24);
     object-fit: cover;
     border-radius: 10px;
