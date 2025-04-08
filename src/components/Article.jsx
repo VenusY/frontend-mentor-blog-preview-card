@@ -2,7 +2,7 @@ export default function Article() {
   return (
     <>
       <img
-        src={require('./assets/images/illustration-article.svg')}
+        src={require('../assets/images/illustration-article.svg')}
         alt='Illustration'
         className='card__image'
       />
